@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1e8d3b1a0603ecad1efdb0118d03ff74",
-    "content-hash": "148932da93bdf1da1d6764302ce47a5f",
+    "hash": "f1a6e9ddfeb338459d6e19c74132c3e5",
+    "content-hash": "9a6822911ab841098ed6cac1bb131f75",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -68,6 +68,56 @@
                 "zip"
             ],
             "time": "2016-02-15 22:46:40"
+        },
+        {
+            "name": "balsama/d8contrib",
+            "version": "8.1.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/balsama/d8contrib.git",
+                "reference": "2241ab1da8e4d8010d75e0df85b0028c2eb29fec"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/balsama/d8contrib/zipball/2241ab1da8e4d8010d75e0df85b0028c2eb29fec",
+                "reference": "2241ab1da8e4d8010d75e0df85b0028c2eb29fec",
+                "shasum": ""
+            },
+            "require": {
+                "drupal/address": "8.1.0-beta3",
+                "drupal/autologout": "8.1.0-rc2",
+                "drupal/calendar": "dev-8.x-1.x",
+                "drupal/captcha": "dev-8.x-1.x",
+                "drupal/config_update": "8.1.1",
+                "drupal/contact_storage": "8.1.0-beta4",
+                "drupal/csv_serialization": "8.1.0-alpha1",
+                "drupal/entity_print": "8.1.3",
+                "drupal/externalauth": "8.1.0-alpha3",
+                "drupal/field_collection": "8.1.0-alpha1",
+                "drupal/focal_point": "8.1.0-beta1",
+                "drupal/login_tracker": "8.1.0",
+                "drupal/recaptcha": "dev-8.x-2.x",
+                "drupal/services": "8.4.0-alpha4",
+                "drupal/sharethis": "8.2.0-beta2",
+                "drupal/ultimate_cron": "8.2.0-alpha1",
+                "drupal/views_rest_feed": "8.1.0-alpha1"
+            },
+            "type": "drupal-module",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Adam Balsam",
+                    "email": "balsam.adam@gmail.com"
+                }
+            ],
+            "description": "A place to automate the download and testing of modules not in the Lightning Distribution.",
+            "support": {
+                "source": "https://github.com/balsama/d8contrib/tree/blt",
+                "issues": "https://github.com/balsama/d8contrib/issues"
+            },
+            "time": "2016-07-05 20:17:09"
         },
         {
             "name": "commerceguys/addressing",
@@ -8584,9 +8634,7 @@
     "stability-flags": {
         "roave/security-advisories": 20,
         "drupal-composer/drupal-security-advisories": 20,
-        "drupal/captcha": 20,
-        "drupal/recaptcha": 20,
-        "drupal/calendar": 20,
+        "balsama/d8contrib": 20,
         "behat/mink": 0,
         "phing/phing": 20
     },
