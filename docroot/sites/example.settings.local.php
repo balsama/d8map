@@ -3,34 +3,16 @@
 /**
  * @file
  * Local development override configuration feature.
+ *
+ * To activate this feature, copy and rename it such that its path plus
+ * filename is 'sites/default/settings.local.php'. Then, go to the bottom of
+ * 'sites/default/settings.php' and uncomment the commented lines that mention
+ * 'settings.local.php'.
+ *
+ * If you are using a site name in the path, such as 'sites/example.com', copy
+ * this file to 'sites/example.com/settings.local.php', and uncomment the lines
+ * at the bottom of 'sites/example.com/settings.php'.
  */
-
-/**
- * Database configuration.
- */
-$databases = array(
-  'default' =>
-  array(
-    'default' =>
-    array(
-      'database' => 'drupal',
-      'username' => 'drupal',
-      'password' => 'drupal',
-      'host' => 'localhost',
-      'port' => '3306',
-      'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
-
-// Configuration directories.
-$dir = dirname(DRUPAL_ROOT);
-$config_directories['sync'] = $dir . '/config/default';
-
-// Use development service parameters.
-$settings['container_yamls'][] = $dir . '/docroot/sites/development.services.yml';
 
 /**
  * Assertions.
@@ -50,6 +32,11 @@ $settings['container_yamls'][] = $dir . '/docroot/sites/development.services.yml
  */
 assert_options(ASSERT_ACTIVE, TRUE);
 \Drupal\Component\Assertion\Handle::register();
+
+/**
+ * Enable local development services.
+ */
+$settings['container_yamls'][] = DRUPAL_ROOT . '/sites/development.services.yml';
 
 /**
  * Show all error messages, with backtrace information.
@@ -108,14 +95,13 @@ $settings['extension_discovery_scan_tests'] = TRUE;
 $settings['rebuild_access'] = TRUE;
 
 /**
- * Temporary file path:
+ * Skip file system permissions hardening.
  *
- * A local file system path where temporary files will be stored. This
- * directory should not be accessible over the web.
- *
- * Note: Caches need to be cleared when this value is changed.
- *
- * See https://www.drupal.org/node/1928898 for more information
- * about global configuration override.
+ * The system module will periodically check the permissions of your site's
+ * site directory to ensure that it is not writable by the website user. For
+ * sites that are managed with a version control system, this can cause problems
+ * when files in that directory such as settings.php are updated, because the
+ * user pulling in the changes won't have permissions to modify files in the
+ * directory.
  */
-$config['system.file']['path']['temporary'] = '/tmp';
+$settings['skip_permissions_hardening'] = TRUE;
