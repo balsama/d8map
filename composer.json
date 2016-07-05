@@ -35,7 +35,9 @@
     "drupal/sharethis": "8.2.0-beta2",
     "drupal/captcha": "dev-8.x-1.x",
     "drupal/recaptcha": "dev-8.x-2.x",
-    "drupal/ultimate_cron": "8.2.0-alpha1"
+    "drupal/ultimate_cron": "8.2.0-alpha1",
+    "drupal/services": "8.4.0-alpha4",
+    "drupal/calendar": "dev-8.x-1.x"
   },
   "require-dev": {
     "behat/behat":                  "3.0.*",
