@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "f1a6e9ddfeb338459d6e19c74132c3e5",
-    "content-hash": "9a6822911ab841098ed6cac1bb131f75",
+    "hash": "546a7cc3f56c91d015026db03d55c1f8",
+    "content-hash": "e278c426cfce14fb8288bac4273f0aa8",
     "packages": [
         {
             "name": "alchemy/zippy",
@@ -1728,15 +1728,15 @@
         },
         {
             "name": "drupal/entity_browser",
-            "version": "8.1.0-alpha3",
+            "version": "8.1.0-alpha4",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/entity_browser.git",
-                "reference": "3d86431a6c70289b7b357875e8bf167a05e7dcc9"
+                "reference": "2ee901318604c1c352695fa88fb14b6696f1f3f7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha3.zip",
+                "url": "https://ftp.drupal.org/files/projects/entity_browser-8.x-1.0-alpha4.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -1761,8 +1761,7 @@
                     "dev-8.x-1.x": "8.1.x-dev"
                 },
                 "patches_applied": {
-                    "2738843 - The view widget should support radio buttons": "https://www.drupal.org/files/issues/2738843-2.patch",
-                    "2741237 - The iframe display plugin should not put dashes in the iframe name": "https://www.drupal.org/files/issues/2741237-3.patch"
+                    "2738843 - The view widget should support radio buttons": "https://www.drupal.org/files/issues/2738843-2.patch"
                 }
             },
             "notification-url": "https://packagist.drupal-composer.org/downloads/",
@@ -1788,7 +1787,7 @@
             ],
             "description": "Provide a generic entity browser/picker/selector.",
             "homepage": "http://drupal.org/project/entity_browser",
-            "time": "2016-05-31 16:42:48"
+            "time": "2016-06-17 12:35:32"
         },
         {
             "name": "drupal/entity_embed",
@@ -2096,17 +2095,11 @@
         },
         {
             "name": "drupal/lightning",
-            "version": "8.1.00",
+            "version": "dev-8.x-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupal.org/project/lightning.git",
-                "reference": "4bfd6e2d046646a45785bc75ba725cdf10e006e7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/lightning-8.x-1.00.zip",
-                "reference": null,
-                "shasum": null
+                "reference": "187a291d7c16660a481561c24337d38d51ef161e"
             },
             "require": {
                 "composer/installers": "^1.0",
@@ -2127,7 +2120,7 @@
                 "drupal/editor": "8.*",
                 "drupal/embed": "^8.1.0",
                 "drupal/entity": "8.1.0-alpha3",
-                "drupal/entity_browser": "8.1.0-alpha3",
+                "drupal/entity_browser": "8.1.0-alpha4",
                 "drupal/entity_embed": "8.1.0-alpha1",
                 "drupal/entity_reference": "8.*",
                 "drupal/features": "^8.3.0",
@@ -2185,7 +2178,7 @@
                 "behat/mink-goutte-driver": "~1.2",
                 "drupal/coder": "8.*",
                 "drupal/devel": "^8.0.0",
-                "drupal/drupal-extension": "3.1.5",
+                "drupal/drupal-extension": "^3.2",
                 "drush/drush": "^9.0",
                 "jakoch/phantomjs-installer": "1.9.8",
                 "jcalderonzumba/gastonjs": "~1.0.2",
@@ -2235,8 +2228,7 @@
                         "2747739 - Mega patch": "https://www.drupal.org/files/issues/ctools--8.x-3.0-alpha26--1fe3649.patch"
                     },
                     "drupal/entity_browser": {
-                        "2738843 - The view widget should support radio buttons": "https://www.drupal.org/files/issues/2738843-2.patch",
-                        "2741237 - The iframe display plugin should not put dashes in the iframe name": "https://www.drupal.org/files/issues/2741237-3.patch"
+                        "2738843 - The view widget should support radio buttons": "https://www.drupal.org/files/issues/2738843-2.patch"
                     },
                     "drupal/entity_embed": {
                         "2656062 - Hide Next button during Selection if Entity Browser is enabled": "https://www.drupal.org/files/issues/2656062-8.patch"
@@ -2251,7 +2243,7 @@
                         "2664682 - Implement admin UI for editing Panelizer defaults": "https://www.drupal.org/files/issues/2664682-45.patch"
                     },
                     "drupal/panels": {
-                        "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-2.patch",
+                        "2747739 - Mega Patch": "https://www.drupal.org/files/issues/panels--beta4-4c4a3a7--2747739-17--binary.patch",
                         "2667754 - Allow other modules to disable the IPE based on custom logic": "https://www.drupal.org/files/issues/2667754-3.patch",
                         "Bandaid tempstore patch": "https://www.drupal.org/files/issues/bandaid.patch",
                         "2697587 - Wizard API integration": "https://www.drupal.org/files/issues/2697587-42.patch"
@@ -2266,7 +2258,8 @@
                         "2668006 - Provide logical access control for when IPE should be applied to moderated nodes": "https://www.drupal.org/files/issues/2668006-2.patch"
                     },
                     "drush/drush": {
-                        "Adding composer.json support to make-convert command": "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch"
+                        "Adding composer.json support to make-convert command": "https://github.com/drush-ops/drush/commit/ce82b946d49b09cd33da5ca84feb24a6c35f8f8e.patch",
+                        "The batch table may not exist by the time _drush_backend_batch_process() is called in 8.x-1.x": "https://github.com/drush-ops/drush/commit/c389aebb7d3e26ff0f544684d8b3ec3528107e55.diff"
                     }
                 },
                 "branch-alias": {
@@ -2279,7 +2272,7 @@
             ],
             "description": "A fast and feature-rich Drupal distribution.",
             "homepage": "https://www.drupal.org/project/lightning",
-            "time": "2016-06-18 21:16:29"
+            "time": "2016-07-01 16:08:29"
         },
         {
             "name": "drupal/login_tracker",
@@ -8634,6 +8627,7 @@
     "stability-flags": {
         "roave/security-advisories": 20,
         "drupal-composer/drupal-security-advisories": 20,
+        "drupal/lightning": 20,
         "balsama/d8contrib": 20,
         "behat/mink": 0,
         "phing/phing": 20
