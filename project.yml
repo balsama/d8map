@@ -28,7 +28,7 @@ git:
   default_branch: master
   remotes:
     # Defining git remotes allows builds deployed via CI.
-    - git@github.com:balsama/d8map.git
+    - d8contrib@svn-5599.devcloud.hosting.acquia.com:d8contrib.git
 
 drush:
   # You can set custom project aliases in drush/site-aliases/aliases.drushrc.php.
